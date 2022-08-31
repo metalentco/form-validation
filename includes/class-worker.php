@@ -7,7 +7,7 @@ if (!class_exists('Ultimate_Member_Frontend_Validations_Worker')):
     {
         public function __construct()
         {
-            add_action('um_after_register_fields', array($this, 'hooks'));
+            add_action('um_after_form_fields', array($this, 'hooks'));
             add_filter('um_extend_field_classes', array($this, 'add_classes'), 10, 3);
         }
 
